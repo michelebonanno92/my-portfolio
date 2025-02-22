@@ -1,12 +1,3 @@
-
-function App() {
-
-
-  return (
-    <>
- 
-    </>
-  )
+export function Header() {
+  return <h1>Hello world</h1>
 }
-
-export default App
