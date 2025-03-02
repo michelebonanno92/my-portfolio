@@ -1,6 +1,6 @@
 export function Header() {
   return (
-    <div>
+    <header>
       {/* Navbar */}
       <nav>
         {/* parte sinistra della navbar*/}
@@ -14,6 +14,6 @@ export function Header() {
         </div>
       </nav>
 
-    </div>
+    </header>
   );
 }

@@ -1,11 +1,24 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 nav {
     display: flex;
-    gap: 1rem;
+    justify-content: space-around;
+    align-items: center;
+    width: 1500px;
+    /* gap: 1rem; */
     background-color: #fff;
-    padding: 1rem;
+    padding: 2rem;
     position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* top: 0; */
+    /* z-index: 1000; */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+  }
+
+  nav a {
+    margin-right: 10px;
+    text-decoration: none
   }
