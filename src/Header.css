@@ -1,24 +1,12 @@
 header{
+    height: 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid black;
+ 
+    
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 1500px;
-    /* gap: 1rem; */
-    background-color: #fff;
-    padding: 2rem;
-    position: fixed;
-    /* top: 0; */
-    /* z-index: 1000; */
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
-  }
 
-  nav a {
-    margin-right: 10px;
-    text-decoration: none
-  }
+
