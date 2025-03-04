@@ -1,1 +1,21 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estendi il reset a pseudo-elementi */
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /* Opzionale: Stile di base per il body */
+  body {
+    font-family: Arial, sans-serif; /* Imposta un font di base */
+    line-height: 1.6; /* Migliora la leggibilità */
+    background-color: #f9f9f9; /* Colore di sfondo neutro */
+  }
+  
 

@@ -1,0 +1,23 @@
+/* #chisono {
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+}
+
+#chisono > div {
+    width: 50%;
+} */
+
+#chisono {
+    display: flex; 
+    gap: 10px; 
+  }
+  
+  #chisono > div {
+    flex: 1; /* Fa sì che i figli occupino spazi uguali */
+    max-width: 50%; /* Limita la larghezza al 50% */
+    box-sizing: border-box; /* Include padding e bordi nella larghezza */
+    background-color: aqua;
+    padding: 100px;
+  }
+  
