@@ -1,3 +1,6 @@
+import React from 'react';
+import myImage from '../assets/images/1.png'; // Percorso relativo
+
 export function SectionChiSono() {
   return (
     <section id="chisono">
@@ -9,7 +12,7 @@ export function SectionChiSono() {
             </p>
         </div>
         <div>
-            foto
+            <img src={myImage} alt="Michele Bonanno" />
         </div>
  
     </section>
