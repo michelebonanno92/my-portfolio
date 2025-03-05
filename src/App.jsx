@@ -8,7 +8,7 @@ import './SectionChiSono.css'
 
 import { Header } from './components/Header'
 import { SectionChiSono } from "./components/SectionChiSono";
-
+import { SectionEsperienze } from "./components/SectionEsperienze";
 
 function App() {
 
@@ -16,8 +16,7 @@ function App() {
     <>
       <Header/>  
       <SectionChiSono />
-      
-
+      <SectionEsperienze />
     </>
   )
 }
