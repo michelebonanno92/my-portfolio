@@ -12,21 +12,35 @@
     display: flex; 
     justify-content: center;
     align-items: center;
-    gap: 10px; 
+    gap: 10px;
+    padding: 80px; 
   }
   
   #chisono > div {
     flex: 1; /* Fa sì che i figli occupino spazi uguali */
     max-width: 50%; /* Limita la larghezza al 50% */
-    box-sizing: border-box; /* Include padding e bordi nella larghezza */
-    padding: 100px;
   }
 
   div h2 {
     margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  div p {
+    font-size: 1.3rem;
   }
   
-  img {
-    max-width: 50%;
-  }
-  
+  .img-container {
+    height: 500px; 
+    width: 500px;
+    border-radius: 50%;
+    overflow: hidden; /* Ritaglia l'immagine */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container img {
+    max-width: 100%;
+    object-fit: cover; /* Adatta l'immagine al contenitore */
+}

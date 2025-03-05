@@ -4,14 +4,15 @@ import myImage from '../assets/images/1.png'; // Percorso relativo
 export function SectionChiSono() {
   return (
     <section id="chisono">
-        <div>
-            <h2>Ciao, benvenuto sul mio sito web.</h2>
+        <div >
+            <h2>Benvenuto! Sono Michele Bonanno...</h2>
             <p>
-                Mi chiamo Michele Bonanno e sono uno Junior Full Stack Web Developer che mi occupo di sviluppare siti web e applicazioni web.
-                Sono un appassionato di tecnologie web e sono sempre alla ricerca di nuove opportunità per migliorare la mia esperienza e la mia capacità di lavoro.
+             Sono uno sviluppatore web appassionato di tecnologie e innovazione. Creo siti e applicazioni web con cura e dedizione, sempre alla ricerca di nuove sfide per crescere e offrire soluzioni di qualità.
+             <br />
+             Se cerchi un professionista determinato e pronto a trasformare idee in realtà, sei nel posto giusto!
             </p>
         </div>
-        <div>
+        <div className='img-container'>
             <img src={myImage} alt="Michele Bonanno" />
         </div>
  
