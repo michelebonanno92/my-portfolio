@@ -1,13 +1,3 @@
-/* #chisono {
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-}
-
-#chisono > div {
-    width: 50%;
-} */
-
 #chisono {
     display: flex; 
     justify-content: center;
@@ -18,7 +8,7 @@
   
   #chisono > div {
     flex: 1; /* Fa sì che i figli occupino spazi uguali */
-    max-width: 50%; /* Limita la larghezza al 50% */
+    max-width: 50%;
   }
 
   div h2 {
