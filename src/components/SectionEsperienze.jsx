@@ -31,7 +31,7 @@ export function SectionEsperienze() {
   return (
     <section className="esperienze-container">
       <div className="competenze">
-        <h2>Competenze Acquisite</h2>
+        <h2 className="text-center">Competenze</h2>
         <div className="competenze-grid">
           {competenze.map((competenza) => (
             <div key={competenza.id} className="competenza-item">
@@ -42,7 +42,7 @@ export function SectionEsperienze() {
         </div>
       </div>
       <div className="esperienze">
-        <h2>Esperienze</h2>
+        <h2 className="text-center">Esperienze</h2>
         <ul>
           {esperienze.map((esperienza) => (
             <li key={esperienza.id} className="esperienza-item">

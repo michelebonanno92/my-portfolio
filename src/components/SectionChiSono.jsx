@@ -4,7 +4,7 @@ import myImage from '../assets/images/1.png'; // Percorso relativo
 export function SectionChiSono() {
   return (
     <section id="chisono">
-        <div >
+        <div>
             <h2>Benvenuto! Sono Michele Bonanno...</h2>
             <p>
              Sono uno sviluppatore web appassionato di tecnologie e innovazione. Creo siti e applicazioni web con cura e dedizione, sempre alla ricerca di nuove sfide per crescere e offrire soluzioni di qualità.
