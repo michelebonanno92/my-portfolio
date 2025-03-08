@@ -1,0 +1,9 @@
+section {
+    padding: 20px;
+   
+}
+
+section li{
+    list-style-type: none;
+    margin-bottom: 20px;
+}

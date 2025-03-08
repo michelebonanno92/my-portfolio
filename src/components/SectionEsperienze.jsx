@@ -4,15 +4,8 @@ export function SectionEsperienze() {
   const esperienze = [
     {
       id: 1,
-      titolo: "Corso Full Stack Developer",
-      descrizioneBreve: "XYZ Academy, 2023",
-      dettagli: "Corso intensivo su HTML, CSS, JavaScript, React, Node.js e database SQL.",
-    },
-    {
-      id: 2,
-      titolo: "Progetto personale - App web",
-      descrizioneBreve: "2024",
-      dettagli: "Sviluppo di un'app per la gestione dei task con React, Node.js e MongoDB.",
+      titolo: "Master Full Stack Web Developer presso Boolean",
+      descrizioneBreve: "Corso intensivo di 700 ore, con lezioni teoriche e pratiche sulla programmazione front-end e back-end e DB, sviluppo di applicazioni web e mobile, gestione di progetti e sviluppo di team.",
     },
   ];
 
@@ -27,6 +20,7 @@ export function SectionEsperienze() {
           </li>
         ))}
       </ul>
+      <h2>Competenze acquisite</h2>
     </section>
   );
 }
