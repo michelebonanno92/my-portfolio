@@ -11,24 +11,7 @@ export function SectionProgetti() {
       demoLink: "#",
       sourceLink: "#",
     },
-    {
-      id: 2,
-      titolo: "Project B",
-      descrizione: "This is a project made to learn the latest languages by building an app.",
-      stack: ["React", "Express", "Node", "Sass"],
-      img: "https://via.placeholder.com/300x200",
-      demoLink: "#",
-      sourceLink: "#",
-    },
-    {
-      id: 3,
-      titolo: "Project C",
-      descrizione: "This is a project made to learn the latest languages by building an app.",
-      stack: ["React", "Express", "Node"],
-      img: "https://via.placeholder.com/300x200",
-      demoLink: "#",
-      sourceLink: "#",
-    },
+
   ];
 
   return (

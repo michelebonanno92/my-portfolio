@@ -1,5 +1,5 @@
 .progetti-container {
-  padding: 40px;
+  padding: 50px;
   background-color: #0a192f;
   color: #ffffff;
 }
@@ -11,9 +11,13 @@
 
 .progetti-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(4, 1fr); 
+  gap: 20px; 
+  max-width: 1400px; 
+  margin: 0 auto;
 }
+
+
 
 .progetto-card {
   background-color: #112240;
@@ -26,6 +30,7 @@
 .progetto-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .progetto-image {
