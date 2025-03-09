@@ -3,6 +3,8 @@ import './Header.css'
 import './Navbar.css'
 import './SectionChiSono.css'
 import './SectionEsperienze.css'
+import './SectionProgetti.css'
+
 
 
 
@@ -11,6 +13,8 @@ import './SectionEsperienze.css'
 import { Header } from './components/Header'
 import { SectionChiSono } from "./components/SectionChiSono";
 import { SectionEsperienze } from "./components/SectionEsperienze";
+import { SectionProgetti } from "./components/SectionProgetti";
+
 
 function App() {
 
@@ -19,6 +23,8 @@ function App() {
       <Header/>  
       <SectionChiSono />
       <SectionEsperienze />
+      <SectionProgetti />
+
     </>
   )
 }
