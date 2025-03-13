@@ -1,5 +1,5 @@
 import React from 'react';
-import myImage from '../assets/images/1.png'; // Percorso relativo
+import myImage from '../assets/images/foto.png'; // Percorso relativo
 
 export function SectionChiSono() {
   return (

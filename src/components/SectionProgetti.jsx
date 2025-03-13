@@ -1,4 +1,13 @@
 import React, { useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+// Importa le immagini
+import img1 from "../assets/images/1.png";
+import img2 from "../assets/images/2.png";
+import img3 from "../assets/images/3.png";
+import img4 from "../assets/images/4.png";
 
 export function SectionProgetti() {
   const progetti = [
@@ -6,9 +15,9 @@ export function SectionProgetti() {
       id: 1,
       titolo: "Boolbnb",
       descrizione:
-        "Boolbnb una web app che permette ai visitatori di cercare appartamenti filtrandoli per via/città, distanza, servizi, stanze e letti. Gli utenti registrati accedono a una dashboard per gestire appartamenti (aggiungere, modificare, eliminare), consultare statistiche e messaggi, sponsorizzare le strutture per maggiore visibilità e filtrare i messaggi nel profilo. La sponsorizzazione è disponibile sia in fase di creazione che successivamente. Tecnologie usate: Front-end: Vue.js, Vue router, Bootstrap, SCSS, Axios, Braintree; Back-end: Laravel e MySQL. Caratteristiche: gestione login/registrazione/CRUD via API, design responsive, rotte protette, sistema di pagamento test con Braintree, geolocalizzazione tramite API TomTom, upload immagini dal front-end e validazione client-side. Laravel gestisce database, API CRUD, validazione back-end e protezione tramite Middleware.",
+        "Boolbnb una web app che permette ai visitatori di cercare appartamenti filtrandoli per via/città, distanza, servizi, stanze e letti. Gli utenti registrati accedono a una dashboard per gestire appartamenti (aggiungere, modificare, eliminare), consultare statistiche e messaggi, sponsorizzare le strutture per maggiore visibilità e filtrare i messaggi nel profilo. La sponsorizzazione è disponibile sia in fase di creazione che successivamente. Tecnologie usate: Front-end: Vue.js, Vue router, Bootstrap, SCSS, Axios, Braintree; Back-end: Laravel e MySQL.",
       stack: ["React", "Express", "Node"],
-      img: "https://via.placeholder.com/300x200",
+      images: [img1, img2, img3, img4], // Usa le immagini importate qui
       demoLink: "#",
       sourceLink: "#",
     },
@@ -19,8 +28,18 @@ export function SectionProgetti() {
   const toggleDescription = (id) => {
     setExpanded((prev) => ({
       ...prev,
-      [id]: !prev[id], // Cambia lo stato per il progetto con l'ID specifico
+      [id]: !prev[id],
     }));
+  };
+
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
   };
 
   return (
@@ -29,11 +48,17 @@ export function SectionProgetti() {
       <div className="progetti-grid">
         {progetti.map((progetto) => (
           <div key={progetto.id} className="progetto-card">
-            <img
-              src={progetto.img}
-              alt={progetto.titolo}
-              className="progetto-image"
-            />
+            <Slider {...sliderSettings} className="progetto-slider">
+              {progetto.images.map((img, index) => (
+                <div key={index}>
+                  <img
+                    src={img}
+                    alt={`Slide ${index + 1} del progetto ${progetto.titolo}`}
+                    className="progetto-image"
+                  />
+                </div>
+              ))}
+            </Slider>
             <div className="progetto-info">
               <h3>{progetto.titolo}</h3>
               <p>
@@ -69,4 +94,3 @@ export function SectionProgetti() {
     </section>
   );
 }
-
