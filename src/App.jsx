@@ -4,7 +4,8 @@ import './Navbar.css'
 import './SectionChiSono.css'
 import './SectionEsperienze.css'
 import './SectionProgetti.css'
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 
