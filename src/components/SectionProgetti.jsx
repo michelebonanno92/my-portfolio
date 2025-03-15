@@ -16,7 +16,7 @@ export function SectionProgetti() {
       titolo: "Boolbnb",
       descrizione:
         "Boolbnb una web app che permette ai visitatori di cercare appartamenti filtrandoli per via/città, distanza, servizi, stanze e letti. Gli utenti registrati accedono a una dashboard per gestire appartamenti (aggiungere, modificare, eliminare), consultare statistiche e messaggi, sponsorizzare le strutture per maggiore visibilità e filtrare i messaggi nel profilo. La sponsorizzazione è disponibile sia in fase di creazione che successivamente. Tecnologie usate: Front-end: Vue.js, Vue router, Bootstrap, SCSS, Axios, Braintree; Back-end: Laravel e MySQL.",
-      stack: ["React", "Express", "Node"],
+      stack: ["Node.js", "MySQL", "Bootstrap", "Vue", "Vue router", "Axios" , "Braintree", "Laravel", "SCSS","API Tom Tom"],
       images: [img1, img2, img3, img4], // Usa le immagini importate qui
       demoLink: "#",
       sourceLink: "#",
@@ -42,6 +42,13 @@ export function SectionProgetti() {
     autoplaySpeed: 3000,
   };
 
+  const handleLinkClick = (e, link) => {
+    if (!link || link === "#") {
+      e.preventDefault();
+      alert("Link non disponibile");
+    }
+  };
+
   return (
     <section className="progetti-container">
       <h2>Progetti</h2>
@@ -60,33 +67,41 @@ export function SectionProgetti() {
               ))}
             </Slider>
             <div className="progetto-info">
-              <h3>{progetto.titolo}</h3>
-              <p>
-                {expanded[progetto.id]
-                  ? progetto.descrizione
-                  : `${progetto.descrizione.substring(0, 150)}...`}
-                <button
-                  onClick={() => toggleDescription(progetto.id)}
-                  className="toggle-btn"
-                >
-                  {expanded[progetto.id] ? "Leggi di meno" : "Leggi di più"}
-                </button>
-              </p>
-              <div className="progetto-stack">
-                {progetto.stack.map((tech, index) => (
-                  <span key={index} className="stack-item">
-                    {tech}
-                  </span>
-                ))}
-              </div>
-              <div className="progetto-links">
-                <a href={progetto.demoLink} className="progetto-btn">
-                  Demo
+                <h3>{progetto.titolo}</h3>
+                <p>
+                    {expanded[progetto.id]
+                    ? progetto.descrizione
+                    : `${progetto.descrizione.substring(0, 150)}...`}
+                    <button
+                    onClick={() => toggleDescription(progetto.id)}
+                    className="toggle-btn"
+                    >
+                    {expanded[progetto.id] ? "Leggi di meno" : "Leggi di più"}
+                    </button>
+                </p>
+                <div className="progetto-stack">
+                    {progetto.stack.map((tech, index) => (
+                    <span key={index} className="stack-item">
+                        {tech}
+                    </span>
+                    ))}
+                </div>
+                <div className="progetto-links">
+                <a
+                    href={progetto.demoLink}
+                    className="progetto-btn"
+                    onClick={(e) => handleLinkClick(e, progetto.demoLink)}
+                    >
+                    Demo
+                    </a>
+                    <a
+                    href={progetto.sourceLink}
+                    className="progetto-btn"
+                    onClick={(e) => handleLinkClick(e, progetto.sourceLink)}
+                    >
+                    Source
                 </a>
-                <a href={progetto.sourceLink} className="progetto-btn">
-                  Source
-                </a>
-              </div>
+                </div>
             </div>
           </div>
         ))}
