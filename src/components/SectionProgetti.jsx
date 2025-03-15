@@ -45,9 +45,32 @@ export function SectionProgetti() {
   const handleLinkClick = (e, link) => {
     if (!link || link === "#") {
       e.preventDefault();
-      alert("Link non disponibile");
+  
+      // Creiamo un elemento div per il messaggio
+      const messageDiv = document.createElement("div");
+      messageDiv.textContent = "Link non disponibile";
+      messageDiv.style.position = "fixed";
+      messageDiv.style.top = "100px";
+      messageDiv.style.left = "50%";
+      messageDiv.style.transform = "translateX(-50%)";
+      messageDiv.style.padding = "10px 20px";
+      messageDiv.style.backgroundColor = "#64ffda";
+      messageDiv.style.color = "#0a192f";
+      messageDiv.style.borderRadius = "5px";
+      messageDiv.style.fontSize = "18px";
+      messageDiv.style.fontWeight = "bold";
+      messageDiv.style.zIndex = "9999";
+      
+      // Aggiungiamo il messaggio alla pagina
+      document.body.appendChild(messageDiv);
+  
+      // Rimuoviamo il messaggio dopo 3 secondi
+      setTimeout(() => {
+        messageDiv.remove();
+      }, 3000);
     }
   };
+  
 
   return (
     <section className="progetti-container">
