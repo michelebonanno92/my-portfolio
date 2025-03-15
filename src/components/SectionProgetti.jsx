@@ -21,6 +21,7 @@ export function SectionProgetti() {
       demoLink: "#",
       sourceLink: "#",
     },
+  
   ];
 
   const [expanded, setExpanded] = useState({});
@@ -48,7 +49,7 @@ export function SectionProgetti() {
   
       // Creiamo un elemento div per il messaggio
       const messageDiv = document.createElement("div");
-      messageDiv.textContent = "Link non disponibile";
+      messageDiv.textContent = "Link al momento non disponibile, ci scusiamo per il disagio.";
       messageDiv.style.position = "fixed";
       messageDiv.style.top = "100px";
       messageDiv.style.left = "50%";
@@ -73,7 +74,7 @@ export function SectionProgetti() {
   
 
   return (
-    <section className="progetti-container">
+    <section id="progetti" className="progetti-container">
       <h2>Progetti</h2>
       <div className="progetti-grid">
         {progetti.map((progetto) => (

@@ -29,7 +29,7 @@ export function SectionEsperienze() {
   ];
 
   return (
-    <section className="esperienze-container">
+    <section id="competenzeesperienze" className="esperienze-container">
       <div className="competenze">
         <h2 className="text-center">Competenze</h2>
         <div className="competenze-grid">
