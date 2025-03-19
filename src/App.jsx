@@ -26,8 +26,6 @@ function App() {
       <SectionEsperienze />
       <SectionProgetti />
       <SectionContatti />
-
-
     </>
   )
 }
