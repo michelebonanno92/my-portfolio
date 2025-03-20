@@ -58,11 +58,7 @@ export function SectionContatti() {
         </form>
       </div>
       <div className="contact-info">
-        <h2>Contatti</h2>
-        <div className="contact-item">
-          <img src="https://img.icons8.com/color/48/phone.png" alt="Phone" />
-          <span>3884791600</span>
-        </div>
+        <h2>Social Network</h2>
         <a
           href="https://www.linkedin.com/in/michele-bonanno-9886a01a3/"
           className="contact-item"
@@ -72,6 +68,12 @@ export function SectionContatti() {
           <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" />
           <span>Linkedin</span>
         </a>
+        <h2>Scopri i miei progetti su GitHub!</h2>
+        <p>
+            Su GitHub puoi trovare una selezione dei miei progetti più recenti. Dallo sviluppo di applicazioni web a progetti open source, ogni repository rappresenta una parte del mio viaggio nel mondo della tecnologia.
+
+            Clicca sul link qui sotto per esplorare il mio profilo GitHub e dare un'occhiata al mio codice. Se hai domande o vuoi collaborare, non esitare a contattarmi!
+        </p>
         <a
           href="https://github.com/michelebonanno92"
           className="contact-item"

@@ -6,7 +6,7 @@ export function Header() {
           <a href="#chisono">Chi sono</a>
           <a href="#competenzeesperienze">Competenze e Esperienze</a>
           <a href="#progetti">Progetti</a>
-          <a href="#contatti">Contatti</a>
+          <a href="#contatti">Contattami</a>
       </nav>
 
     </header>
