@@ -1,46 +1,96 @@
-.contatti-section {  
-    background-color: #0a192f; /* Colore di sfondo */  
-    color: white; /* Colore del testo */  
-    padding: 40px;  
-    text-align: center;
+.contatti-section {
+    background-color: #0a192f; /* Colore di sfondo */
+    color: white; /* Colore del testo */
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap; /* Per rendere il layout responsivo */
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .form-container,
+  .contact-info {
+    flex: 1;
+    min-width: 300px; /* Gestisce il layout su schermi piccoli */
+    margin: 10px;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+  
+  input,
+  textarea {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  input:focus,
+  textarea:focus {
+    border-color: #007bff;
+  }
+  
+  textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .contact-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-
- 
-}  
-
-h2 {  
-    font-size: 2.5rem; /* Dimensione del titolo */  
-    margin-bottom: 10px; /* Spaziatura sotto il titolo */  
-}  
-
-p {  
-    font-size: 1.2rem; /* Dimensione del sottotitolo */  
-    margin-bottom: 30px; /* Spaziatura sotto il sottotitolo */  
-}  
-
-.contact-info {  
-    display: flex;  
-    flex-direction: column;  
-    align-items: flex-start;
-}
-
-.contact-item {  
-    display: flex; /* Usato per allineare l'icona e il testo */  
-    align-items: center;  
-    color: white;  
-    text-decoration: none; /* Rimuove la sottolineatura dei link */  
-    margin: 10px 0; /* Spaziatura tra i contatti */  
-    transition: color 0.3s; /* Transizione per l'effetto hover */  
-}  
-
-.contact-item:hover {  
-    color: rgba(255, 255, 255, 0.7); /* Colore del testo all'hover */  
-}  
-
-.contact-item img {  
-    margin-right: 10px; /* Spaziatura tra l'icona e il testo */  
-    width: 24px; /* Imposta una larghezza per le icone */  
-    height: 24px; /* Imposta un'altezza per le icone */  
-}  
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .contact-item:hover {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .contact-item img {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+  }
+  
