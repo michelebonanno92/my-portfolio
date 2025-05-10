@@ -52,7 +52,8 @@ export function SectionContatti() {
               onChange={handleInputChange}
               required
               placeholder="Scrivi il tuo messaggio"
-            ></textarea>
+            >
+            </textarea>
           </div>
           <button type="submit" className="submit-btn">Invia</button>
         </form>
@@ -68,7 +69,7 @@ export function SectionContatti() {
           <img src="https://img.icons8.com/color/48/linkedin.png" alt="LinkedIn" />
           <span>Linkedin</span>
         </a>
-        <h2>Scopri i miei progetti su GitHub!</h2>
+        <h2>Scopri i miei lavori su GitHub!</h2>
         <p>
             Su GitHub puoi trovare una selezione dei miei progetti più recenti. Dallo sviluppo di applicazioni web a progetti open source, ogni repository rappresenta una parte del mio viaggio nel mondo della tecnologia.
 

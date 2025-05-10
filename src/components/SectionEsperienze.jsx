@@ -22,7 +22,7 @@ export function SectionEsperienze() {
   const esperienze = [
     {
       id: 1,
-      titolo: "Master Full Stack Web Developer presso Boolean",
+      titolo: "Master in Full Stack Web Developer presso Boolean",
       periodo: "Maggio 2024 - Dicembre 2024",
       descrizioneBreve: "Corso intensivo di 700 ore, con lezioni teoriche e pratiche sulla programmazione front-end e back-end e DB, sviluppo di applicazioni web e mobile, gestione di progetti e sviluppo di team.",
     },
