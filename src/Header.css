@@ -3,13 +3,12 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0a192f;
+    background-color: #F3E5AB;
     position: fixed; /* Rende l'header fisso */
     top: 0; /* Posiziona l'header in cima alla finestra */
     left: 0; /* Assicurati che l'header si estenda fino al lato sinistro */
     width: 100%; /* L'header occupa tutta la larghezza della finestra */
     z-index: 1000;
-    box-shadow: 0 4px 2px -2px #0a192f; /* Opzionale: aggiunge un'ombra per migliorare la visibilità */
     padding: 10px 20px;
 }
 

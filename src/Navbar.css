@@ -14,12 +14,12 @@
     text-decoration: none;
     font-size: 18px; 
     transition: background-color 0.3s ease; 
-    color: white;
+    color: black;
   }
   
   .navbar a:hover {
     border-radius: 5px; 
-    color:#64ffda;
+    color:#FAF3E0;
     padding: 8px 0px;
   }
   
