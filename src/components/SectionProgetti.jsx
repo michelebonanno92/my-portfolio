@@ -39,37 +39,8 @@ export function SectionProgetti() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 3000,
-  };
-
-  const handleLinkClick = (e, link) => {
-    if (!link || link === "#") {
-      e.preventDefault();
-  
-      // Creiamo un elemento div per il messaggio
-      const messageDiv = document.createElement("div");
-      messageDiv.textContent = "Link al momento non disponibile, ci scusiamo per il disagio.";
-      messageDiv.style.position = "fixed";
-      messageDiv.style.top = "100px";
-      messageDiv.style.left = "50%";
-      messageDiv.style.transform = "translateX(-50%)";
-      messageDiv.style.padding = "10px 20px";
-      messageDiv.style.backgroundColor = "#64ffda";
-      messageDiv.style.color = "#0a192f";
-      messageDiv.style.borderRadius = "5px";
-      messageDiv.style.fontSize = "18px";
-      messageDiv.style.fontWeight = "bold";
-      messageDiv.style.zIndex = "9999";
-      
-      // Aggiungiamo il messaggio alla pagina
-      document.body.appendChild(messageDiv);
-  
-      // Rimuoviamo il messaggio dopo 3 secondi
-      setTimeout(() => {
-        messageDiv.remove();
-      }, 3000);
-    }
   };
   
 
@@ -95,7 +66,7 @@ export function SectionProgetti() {
                 <p>
                     {expanded[progetto.id]
                     ? progetto.descrizione
-                    : `${progetto.descrizione.substring(0, 150)}...`}
+                    : `${progetto.descrizione.substring(0, 150)}.`}
                     <button
                     onClick={() => toggleDescription(progetto.id)}
                     className="toggle-btn"
@@ -111,20 +82,7 @@ export function SectionProgetti() {
                     ))}
                 </div>
                 <div className="progetto-links">
-                <a
-                    href={progetto.demoLink}
-                    className="progetto-btn"
-                    onClick={(e) => handleLinkClick(e, progetto.demoLink)}
-                    >
-                    Demo
-                    </a>
-                    <a
-                    href={progetto.sourceLink}
-                    className="progetto-btn"
-                    onClick={(e) => handleLinkClick(e, progetto.sourceLink)}
-                    >
-                    Source
-                </a>
+      
                 </div>
             </div>
           </div>
