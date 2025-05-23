@@ -5,7 +5,7 @@ export function SectionChiSono() {
   return (
     <section id="chisono">
         <div>
-            <h2>Benvenuto!</h2>
+            <h2>Benvenuto nel mio sito web</h2>
             <p> 
               Mi chiamo Michele Bonanno e sono uno Junior Web Developer Full Stack, appassionato di programmazione logica e problem solving. Negli ultimi mesi ho realizzato progetti e programmi pratici con JavaScript, PHP, Java e framework come Vue.js, React, Laravel e Bootstrap, gestendo database con MySQL. Attualmente sto approfondendo Java per ampliare le mie competenze e affrontare nuove sfide nel mondo dello sviluppo.
             </p>

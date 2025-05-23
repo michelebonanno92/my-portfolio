@@ -7,32 +7,15 @@
     color: black;
     padding: 110px 50px;
   }
-  
-  #chisono > div {
-    flex: 1; /* Fa sì che i figli occupino spazi uguali */
-    max-width: 50%;
-  }
 
   div h2 {
     margin-bottom: 20px;
-    font-size: 2rem;
+    text-align: center;
   }
 
   div p {
     font-size: 1.2rem;
+    text-align: center;
   }
-  
-  .img-container {
-    height: 500px; 
-    width: 500px;
-    border-radius: 50%;
-    overflow: hidden; /* Ritaglia l'immagine */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.img-container img {
-    max-width: 100%;
-    object-fit: cover; /* Adatta l'immagine al contenitore */
-}
+
