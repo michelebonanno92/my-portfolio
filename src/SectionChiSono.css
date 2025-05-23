@@ -1,11 +1,7 @@
 #chisono {
-    display: flex; 
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
     background-color: #FAF3E0;
     color: black;
-    padding: 110px 50px;
+    padding: 80px 80px;
   }
 
   div h2 {
